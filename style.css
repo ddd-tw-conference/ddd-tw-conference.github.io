@@ -56,6 +56,16 @@ footer {
   border-radius: 0 8px 8px 0;
 }
 
+.links a div {
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    font-variation-settings 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.links a:hover div {
+  transform: scale(1.2);
+  font-variation-settings: "CASL" 1, "slnt" -15;
+}
+
 footer {
   background: #282828;
   padding: 2rem 1rem;
