@@ -1,6 +1,6 @@
 .cfs {
   box-sizing: border-box;
-  max-width: 500px;
+  max-width: 1024px;
   font-size: 0.825rem;
   padding: 16px;
   margin: auto;
@@ -9,7 +9,7 @@
   font-variation-settings: "CASL" 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .cfs {
     border-radius: 0;
   }
