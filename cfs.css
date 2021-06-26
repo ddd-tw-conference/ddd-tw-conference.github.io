@@ -1,0 +1,38 @@
+.cfs {
+  max-width: 500px;
+  font-size: 0.825rem;
+  padding: 16px;
+  margin: auto;
+  background-color: #121212;
+  border-radius: 16px;
+  font-variation-settings: "CASL" 0;
+}
+
+.cfs p,
+.cfs li {
+  font-variation-settings: "CASL" 1;
+}
+
+.cfs img {
+  display: block;
+  max-width: 250px;
+  margin: auto;
+  filter: invert();
+  opacity: 0.9;
+}
+
+.cfs .check {
+  padding-left: 2em;
+}
+
+.cfs .check li {
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+}
+
+.cfs .check li svg {
+  margin-right: 0.5em;
+  height: 1em;
+  width: 1em;
+}
