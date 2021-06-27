@@ -2,16 +2,42 @@
   box-sizing: border-box;
   max-width: 1024px;
   font-size: 0.925rem;
-  padding: 64px 32px;
+  padding: 4em 2em;
   margin: auto;
   background-color: #333333;
   border-radius: 16px;
   font-variation-settings: "CASL" 0;
 }
 
+@media (max-width: 319px) {
+  .cfs {
+    padding: 2em 0.5em;
+  }
+}
+
+.cfs * {
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+
 @media (max-width: 1024px) {
   .cfs {
     border-radius: 0;
+  }
+}
+
+.cfs .speaker {
+  fill: currentColor;
+  max-width: 250px;
+  float: right;
+}
+
+@media (max-width: 685px) {
+  .cfs .speaker {
+    max-width: min(80%, 200px);
+    float: none;
+    margin: auto;
+    display: block;
   }
 }
 
@@ -23,12 +49,13 @@
 .cfs img {
   display: block;
   max-width: 250px;
+  width: 100%;
   margin: auto;
   filter: invert();
   opacity: 0.9;
 }
 
-.cfs .check {
+.cfs ul {
   padding-left: 2em;
 }
 
@@ -36,10 +63,13 @@
   display: flex;
   align-items: baseline;
   list-style: none;
+  position: relative;
 }
 
 .cfs .check li svg {
-  margin-right: 0.5em;
+  position: absolute;
+  left: -1.3em;
+  top: 0.08em;
   height: 1em;
   width: 1em;
 }

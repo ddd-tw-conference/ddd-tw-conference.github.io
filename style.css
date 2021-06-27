@@ -7,7 +7,30 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 48px;
+  gap: 2em;
+  font-size: 1em;
+  padding: 10vh 0;
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 320px) {
+  html,
+  body {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 240px) {
+  html,
+  body {
+    font-size: 0.7em;
+  }
 }
 
 header,
@@ -34,8 +57,14 @@ a:hover {
 
 .main {
   flex: 1;
-  padding: 2rem 1rem;
+  padding: 2em 1em;
   display: flex;
+}
+
+@media (max-width: 320px) {
+  .main {
+    padding: 1em 0.5em;
+  }
 }
 
 .links {
