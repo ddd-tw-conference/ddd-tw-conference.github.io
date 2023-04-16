@@ -6,7 +6,6 @@
   margin: auto;
   background-color: #333333;
   border-radius: 16px;
-  font-variation-settings: "CASL" 0;
 }
 
 @media (max-width: 319px) {
@@ -39,11 +38,6 @@
     margin: auto;
     display: block;
   }
-}
-
-.cfs p,
-.cfs li {
-  font-variation-settings: "CASL" 1;
 }
 
 .cfs img {
